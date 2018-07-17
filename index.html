@@ -1,0 +1,13 @@
+<script src="node_modules/react/umd/react.development.js"></script>
+<script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+<div id="app">
+</div>
+<script>
+    var text1= React.createElement('p', { style: { color: "white"}}, "white on blue");
+    var text2 = React.createElement('p', { style: {color: "blue"}}, "blue on red");
+    var text3= React.createElement('p', {style: {color: "green"}}, "green on pink");
+    var box1 = React.createElement('div', { style: {display: "inline-block", backgroundColor: "blue", height: 150, width: 150 }}, text1)
+    var box2 = React.createElement('div', {style: { display: "inline-block", backgroundColor:"red", height: 150, width: 150}}, text2);
+    var box3 = React.createElement('div', {style: { display: "inline-block", backgroundColor: "pink", height: 150, width: 150}}, text3);
+    ReactDOM.render([box1,box2,box3], document.getElementById("app"));
+</script>
